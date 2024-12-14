@@ -1,6 +1,7 @@
 set(LINGUAS
     da
     es
+    el
     eu
     fi
     fr

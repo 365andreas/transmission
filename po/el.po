@@ -28,7 +28,7 @@ msgstr ""
 
 #: ../cli/cli.cc:87 ../gtk/Utils.cc:118 ../libtransmission/utils.cc:545
 msgid "None"
-msgstr "Κανένα"
+msgstr "0"
 
 #: ../cli/cli.cc:92
 msgid "Inf"
@@ -124,7 +124,7 @@ msgstr "Κλείσιμο συνδέσεων…"
 
 #: ../gtk/Application.cc:1021
 msgid "Sending upload/download totals to tracker…"
-msgstr "Αποστέλλονται συνολικά απεσταλμένα/ληφθέντα στον ιχνηλάτη…"
+msgstr "Αποστολή στατιστικών απεσταλμένων/ληφθέντων στον ιχνηλάτη…"
 
 #: ../gtk/Application.cc:1026
 msgid "_Quit Now"
@@ -225,7 +225,7 @@ msgstr "Σε σειρά για κατέβασμα"
 #: ../gtk/DetailsDialog.cc:580 ../gtk/FilterBar.cc:473
 msgctxt "Verb"
 msgid "Downloading"
-msgstr "Λήψη"
+msgstr "Λαμβανόμενα"
 
 #: ../gtk/DetailsDialog.cc:583 ../gtk/Torrent.cc:434
 msgid "Queued for seeding"
@@ -234,15 +234,15 @@ msgstr "Σε σειρά για μοίρασμα"
 #: ../gtk/DetailsDialog.cc:586 ../gtk/FilterBar.cc:474
 msgctxt "Verb"
 msgid "Seeding"
-msgstr "Διαμοιρασμός"
+msgstr "Διαμοιραζόμενα"
 
 #: ../gtk/DetailsDialog.cc:589 ../gtk/FilterBar.cc:476 ../gtk/Torrent.cc:425
 msgid "Finished"
-msgstr "Ολοκληρώθηκε"
+msgstr "Ολοκληρωμένα"
 
 #: ../gtk/DetailsDialog.cc:589 ../gtk/FilterBar.cc:475 ../gtk/Torrent.cc:425
 msgid "Paused"
-msgstr "Σε παύση"
+msgstr "Παυθέντα"
 
 #: ../gtk/DetailsDialog.cc:610 ../gtk/DetailsDialog.cc:615 ../gtk/DetailsDialog.cc:729
 msgid "N/A"
@@ -340,11 +340,11 @@ msgstr "Θα γινόταν λήψη απ'αυτόν τον διαμοιραστ
 
 #: ../gtk/DetailsDialog.cc:1506
 msgid "Uploading to peer"
-msgstr "Αποστολή σε διαμοιραστή"
+msgstr "Ανέβασμα σε διαμοιραστή"
 
 #: ../gtk/DetailsDialog.cc:1510
 msgid "We would upload to this peer if they asked"
-msgstr "Θα γίνει αποστολή σε αυτό τον διαμοιραστή αν ζητηθεί"
+msgstr "Θα γίνει ανέβασμα σε αυτό τον διαμοιραστή αν ζητηθεί"
 
 #: ../gtk/DetailsDialog.cc:1514
 msgid "Peer has unchoked us, but we're not interested"
@@ -385,11 +385,11 @@ msgstr "%"
 
 #: ../gtk/DetailsDialog.cc:1632
 msgid "Dn Reqs"
-msgstr "Αιτήσεις λήψης"
+msgstr "Αιτήσεις κατεβάσματος"
 
 #: ../gtk/DetailsDialog.cc:1639
 msgid "Up Reqs"
-msgstr "Αιτήσεις αποστολής"
+msgstr "Αιτήσεις ανεβάσματος"
 
 #: ../gtk/DetailsDialog.cc:1646
 msgid "Dn Blocks"
@@ -409,11 +409,11 @@ msgstr "Ακυρώθηκαν από άλλους"
 
 #: ../gtk/DetailsDialog.cc:1675 ../gtk/DetailsDialog.cc:1753
 msgid "Down"
-msgstr "Λήψη"
+msgstr "Κατέβασμα"
 
 #: ../gtk/DetailsDialog.cc:1683
 msgid "Up"
-msgstr "Αποστολή"
+msgstr "Ανέβασμα"
 
 #: ../gtk/DetailsDialog.cc:1690
 msgid "Client"
@@ -441,7 +441,7 @@ msgstr "Η αίτηση για λίστα διαμοιραστών {markup_begin
 #. {markup_begin} and {markup_end} should surround the error
 #: ../gtk/DetailsDialog.cc:1833
 msgid "Got an error '{markup_begin}{error}{markup_end}' {time_span_ago}"
-msgstr "Λήψη σφάλματος '{markup_begin}{error}{markup_end}' {time_span_ago}"
+msgstr "Λήφθηκε σφάλμα '{markup_begin}{error}{markup_end}' {time_span_ago}"
 
 #: ../gtk/DetailsDialog.cc:1846
 msgid "No updates scheduled"
@@ -449,7 +449,7 @@ msgstr "Δεν έχει προγραμματιστεί καμία ενημέρω
 
 #: ../gtk/DetailsDialog.cc:1853
 msgid "Asking for more peers {time_span_from_now}"
-msgstr "Αίτηση για περισσότερους διαμοιραστές {time_span_from_now}"
+msgstr "Αίτηση για περισσότερους διαμοιραστές σε {time_span_from_now}"
 
 #: ../gtk/DetailsDialog.cc:1860
 msgid "Queued to ask for more peers"
@@ -488,7 +488,7 @@ msgstr "Αίτηση για περισσότερους διαμοιραστές 
 
 #: ../gtk/DetailsDialog.cc:1930
 msgid "Queued to ask for peer counts"
-msgstr "Σε αναμονή για αίτηση αριθμού ομότιμων χρηστών"
+msgstr "Σε αναμονή για αίτηση αριθμού διαμοιραστών"
 
 #: ../gtk/DetailsDialog.cc:1937
 msgid "Asked for peer counts {markup_begin}{time_span_ago}{markup_end}"
@@ -601,7 +601,7 @@ msgstr "Μέγεθος"
 #. add "progress" column
 #: ../gtk/FileList.cc:993
 msgid "Have"
-msgstr "Έχω"
+msgstr "Κατοχή"
 
 #. add "enabled" column
 #: ../gtk/FileList.cc:1010
@@ -664,19 +664,19 @@ msgstr "Χωρίς όριο"
 
 #: ../gtk/MainWindow.cc:497
 msgid "Seed Forever"
-msgstr "Αποστολή για πάντα"
+msgstr "Ανέβασμα για πάντα"
 
 #: ../gtk/MainWindow.cc:536
 msgid "Limit Download Speed"
-msgstr "Περιορισμός ταχύτητας λήψης"
+msgstr "Περιορισμός ταχύτητας κατεβάσματος"
 
 #: ../gtk/MainWindow.cc:537
 msgid "Limit Upload Speed"
-msgstr "Περιορισμός ταχύτητας αποστολής"
+msgstr "Περιορισμός ταχύτητας ανεβάσματος"
 
 #: ../gtk/MainWindow.cc:541
 msgid "Stop Seeding at Ratio"
-msgstr "Διακοπή αποστολής σε συγκεκριμένη αναλογία"
+msgstr "Διακοπή ανεβάσματος σε συγκεκριμένη αναλογία"
 
 #: ../gtk/MainWindow.cc:580
 msgid "Stop at Ratio ({ratio})"
@@ -1254,7 +1254,7 @@ msgstr "Λήψη και διαμοιρασμός των αρχείων μέσω 
 #. Translators: Search terms to find this application. Do NOT translate or localize the semicolons! The list MUST also end with a semicolon!
 #: ../gtk/transmission-gtk.desktop.in:7
 msgid "torrents;downloading;uploading;share;sharing;"
-msgstr "torrent;λήψη;αποστολή;μοίρασε;διαμοιρασμός;"
+msgstr "torrent;κατέβασμα;ανέβασμα;λήψη;διαμοιρασμός;"
 
 #: ../gtk/transmission-gtk.desktop.in:21
 msgid "Start Transmission with All Torrents Paused"
@@ -1442,7 +1442,7 @@ msgstr "Ταξινόμηση κατά _Πρόοδο"
 
 #: ../gtk/transmission.ui:223 ../gtk/transmission.ui:330
 msgid "Sort by _Queue"
-msgstr "Ταξινόμηση κατά _σειρά"
+msgstr "Ταξινόμηση κατά _Σειρά"
 
 #: ../gtk/transmission.ui:228 ../gtk/transmission.ui:335
 msgid "Sort by Rati_o"
@@ -1454,7 +1454,7 @@ msgstr "Ταξινόμηση κατά Μέ_γεθος"
 
 #: ../gtk/transmission.ui:238 ../gtk/transmission.ui:345
 msgid "Sort by Stat_e"
-msgstr "Ταξινόμηση κατά _Κατάσταση"
+msgstr "Ταξινόμηση βάσει _Κατάστασης"
 
 #: ../gtk/transmission.ui:243 ../gtk/transmission.ui:350
 msgid "Sort by Time _Left"
@@ -1526,7 +1526,7 @@ msgstr "Μέγεθος torrent:"
 
 #: ../gtk/ui/gtk3/DetailsDialog.ui:92 ../gtk/ui/gtk4/DetailsDialog.ui:49
 msgid "Have:"
-msgstr "Έχουμε:"
+msgstr "Κατοχή:"
 
 #: ../gtk/ui/gtk3/DetailsDialog.ui:104 ../gtk/ui/gtk3/StatsDialog.ui:92 ../gtk/ui/gtk3/StatsDialog.ui:250 ../gtk/ui/gtk4/DetailsDialog.ui:59 ../gtk/ui/gtk4/StatsDialog.ui:33 ../gtk/ui/gtk4/StatsDialog.ui:151
 msgid "Uploaded:"
@@ -1590,7 +1590,7 @@ msgstr "Πληροφορίες"
 
 #: ../gtk/ui/gtk3/DetailsDialog.ui:594 ../gtk/ui/gtk3/DetailsDialog.ui:722 ../gtk/ui/gtk4/DetailsDialog.ui:451 ../gtk/ui/gtk4/DetailsDialog.ui:528
 msgid "Show _more details"
-msgstr "Εμφάνιση _περισσότερων  λεπτομερειών"
+msgstr "Εμφάνιση _περισσότερων λεπτομερειών"
 
 #: ../gtk/ui/gtk3/DetailsDialog.ui:617 ../gtk/ui/gtk4/DetailsDialog.ui:461
 msgid "Peers"
@@ -1638,15 +1638,15 @@ msgstr "_Αναλογία"
 
 #: ../gtk/ui/gtk3/DetailsDialog.ui:1012 ../gtk/ui/gtk4/DetailsDialog.ui:727
 msgid "_Idle:"
-msgstr "Α_δρανές"
+msgstr "Α_δράνεια"
 
 #: ../gtk/ui/gtk3/DetailsDialog.ui:1117 ../gtk/ui/gtk4/DetailsDialog.ui:787
 msgid "Peer Connections"
-msgstr "Συνδέσεις ομότιμων χρηστών"
+msgstr "Συνδέσεις διαμοιραστών"
 
 #: ../gtk/ui/gtk3/DetailsDialog.ui:1141 ../gtk/ui/gtk4/DetailsDialog.ui:801
 msgid "_Maximum peers:"
-msgstr "_Μέγιστος αριθμός ομότιμων χρηστών:"
+msgstr "_Μέγιστος αριθμός διαμοιραστών:"
 
 #: ../gtk/ui/gtk3/DetailsDialog.ui:1178 ../gtk/ui/gtk3/MainWindow.ui:170 ../gtk/ui/gtk3/PrefsDialog.ui:1417 ../gtk/ui/gtk4/DetailsDialog.ui:827 ../gtk/ui/gtk4/MainWindow.ui:136 ../gtk/ui/gtk4/PrefsDialog.ui:982
 msgid "Options"
@@ -2419,7 +2419,7 @@ msgstr "Δε βρέθηκαν δεδομένα! Βεβαιωθείτε ότι ο
 
 #: ../libtransmission/torrent.cc:400
 msgid "Calling script '{path}'"
-msgstr "Εκτέλεση  script '{path}'"
+msgstr "Εκτέλεση script '{path}'"
 
 #: ../libtransmission/torrent.cc:408
 msgid "Couldn't call script '{path}': {error} ({error_code})"
