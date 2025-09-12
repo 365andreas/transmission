@@ -91,7 +91,7 @@ void maintain_mmdb_file(std::string const& mmdb_file)
     }
 
     std::string url;
-    if (!Glib::file_test(mmdb_file, Glib::FileTest::EXISTS))
+    if (!Glib::file_test(mmdb_file, Glib::FileTest::FILE_TEST_EXISTS))
     {
         url = "https://download.db-ip.com/free/dbip-city-lite-" + year + "-" + month + ".mmdb.gz";
     }
